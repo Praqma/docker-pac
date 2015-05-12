@@ -5,6 +5,7 @@ Docker that enables running [Praqmatic-Automated-Changelog](https://github.com/P
 The docker does not have and  `CMD` nor `ENTRYPOINT` and therefore the total command to `docker run` need to be supplied.
 
 **Host configuration**
+
 The PAC tool uses among others the html2pdf conversion(pdfkit). This tool needs to use the DISPLAY and therefore this change need to be set in the host:
 
 `xhost +local:root`
