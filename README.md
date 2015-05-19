@@ -10,7 +10,12 @@ The PAC tool uses among others the html2pdf conversion(pdfkit). This tool needs 
 
 `xhost +local:root`
 
-**Example of `docker run`**
+**Usage example**
 
-`docker run -v $(pwd):/data -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=$DISPLAY pac-0.1 ruby Praqmatic-Automated-Changelog/pac.rb -s a75e128 --settings=pac_settings.yml`
+There is a usage example described in [PAC repository README file](https://github.com/Praqma/Praqmatic-Automated-Changelog/blob/master/README.md#using-the-praqmadocker-pac-container)
 
+**Generic usage example**:
+
+`docker run -v <your-data-dir>:/data -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=$DISPLAY praqma/pac:<version> ruby <PAC-locatio>/pac.rb -s f9a66ca6d2e6 --settings=<your-project>/<your-project-PAC-settings-file>`
+
+* all directory location (except `<your-data-dir>`) must be beneath the `<your-data-dir>` and relative to this
