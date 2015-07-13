@@ -23,11 +23,12 @@ RUN gem install nokogiri -- --use-system-libraries  --no-rdoc --no-ri
 RUN gem install 'trac4r' --no-rdoc --no-ri
 
 RUN gem install 'docopt' --no-rdoc --no-ri
-RUN gem install 'test-unit' --no-rdoc --no-ri
 RUN gem install 'ruby-fogbugz' --no-rdoc --no-ri
 RUN gem install 'flexmock' --no-rdoc --no-ri
 RUN gem install 'simplecov'  --no-rdoc --no-ri 
 RUN gem install 'simplecov-rcov'  --no-rdoc --no-ri
+RUN gem install 'ci_reporter_test_unit' --no-rdoc --no-ri
+RUN gem install 'zip' --no-rdoc --no-ri
 
 RUN apt-get install -y wkhtmltopdf
 
