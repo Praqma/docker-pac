@@ -19,3 +19,7 @@ There is a usage example described in [PAC repository README file](https://githu
 `docker run -v <your-data-dir>:/data -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=$DISPLAY praqma/pac:<version> ruby <PAC-locatio>/pac.rb -s f9a66ca6d2e6 --settings=<your-project>/<your-project-PAC-settings-file>`
 
 * all directory location (except `<your-data-dir>`) must be beneath the `<your-data-dir>` and relative to this
+* 
+
+#Compatibility
+Cannot be used with windows.
