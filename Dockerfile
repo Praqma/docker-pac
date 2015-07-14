@@ -8,7 +8,7 @@ RUN apt-get install -y zlib1g-dev
 RUN apt-get install -y ruby
 RUN apt-get install -y ruby-dev
 
-RUN apt-get install git vim
+RUN apt-get install -y git vim
 
 RUN gem install 'mercurial-ruby' --no-rdoc --no-ri
 RUN gem install 'kramdown' --no-rdoc --no-ri
