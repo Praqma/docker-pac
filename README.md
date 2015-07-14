@@ -22,4 +22,5 @@ There is a usage example described in [PAC repository README file](https://githu
 * 
 
 #Compatibility
-Cannot be used with windows.
+* Unable to install this image in Windows 8.1
+
