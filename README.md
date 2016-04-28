@@ -1,26 +1,13 @@
-# docker-pac
+# docker-pac (DEPRECATED)
 
-Docker that enables running [Praqmatic-Automated-Changelog](https://github.com/Praqma/Praqmatic-Automated-Changelog) alias PAC out-of-the-box. Please refer to its README.md for PAC help
+Old repository for Docker file and readme for the [praqma/pac image](https://hub.docker.com/r/praqma/pac).
 
-The docker does not have and  `CMD` nor `ENTRYPOINT` and therefore the total command to `docker run` need to be supplied.
+Never versions are maintained and released from the [Praqmatic Automated Changelog tool repository](https://github.com/Praqma/Praqmatic-Automated-Changelog).
 
-**Host configuration**
+The older version of the praqma/pac image (tagged v3, v4, v18, v20) are only Ruby environments fitted to run older versions of PAC. In those versions you would have to mount in the PAC Ruby script yourself.
+Those images do not work with never versions (2.x and forward).
 
-The PAC tool uses among others the html2pdf conversion(pdfkit). This tool needs to use the DISPLAY and therefore this change need to be set in the host:
+You can check out those version from here and they are tagged as releases.
 
-`xhost +local:root`
 
-**Usage example**
-
-There is a usage example described in [PAC repository README file](https://github.com/Praqma/Praqmatic-Automated-Changelog/blob/master/README.md#using-the-praqmadocker-pac-container)
-
-**Generic usage example**:
-
-`docker run -v <your-data-dir>:/data -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=$DISPLAY praqma/pac:<version> ruby <PAC-locatio>/pac.rb -s f9a66ca6d2e6 --settings=<your-project>/<your-project-PAC-settings-file>`
-
-* all directory location (except `<your-data-dir>`) must be beneath the `<your-data-dir>` and relative to this
-* 
-
-#Compatibility
-* Unable to install this image in Windows 8.1
-
+If you wan't to see the old documentation and the content of the repository, go back by using tags og git commit history.
