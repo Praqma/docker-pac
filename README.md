@@ -1,9 +1,5 @@
 # docker-pac
 
-##NOTE
-This repository is deprecated as of all images tagged with 2.0.0-X or later. The dockerfile for pac has been moved to [Praqmatic-Automated-Changelog](https://github.com/Praqma/Praqmatic-Automated-Changelog)
-
-## Old documentaion
 Docker that enables running [Praqmatic-Automated-Changelog](https://github.com/Praqma/Praqmatic-Automated-Changelog) alias PAC out-of-the-box. Please refer to its README.md for PAC help
 
 The docker does not have and  `CMD` nor `ENTRYPOINT` and therefore the total command to `docker run` need to be supplied.
