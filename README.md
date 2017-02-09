@@ -1,3 +1,7 @@
+---
+maintainer: buep
+---
+
 # docker-pac (DEPRECATED)
 
 Old repository for Docker file and readme for the [praqma/pac image](https://hub.docker.com/r/praqma/pac).
